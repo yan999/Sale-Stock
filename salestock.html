@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sale Stock Indonesia	</title>
+<link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet" type="text/css">
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body class="body">
+<div id="mainWrapper">
+  <header> 
+    <!-- This is the header content. It contains Logo and links -->
+    <div id="logo"> <!-- <img src="logoImage.png" alt="sample logo"> --> 
+      <!-- Company Logo text --> 
+      LOGO </div>
+  </header>
+  <section id="offer"> 
+    <div class="div"><h4 id="judul1">Isi Data Sista</h4></div>
+    <div id="nama">Nama Sista * <input id="namaC" type="text" align="right" required/></div>
+    <div id="email">Email Sista<input id="emailC" type="text" align="right"/></div>
+    <div id="hp">Handphone Sista<input id="hpC" type="number" align="right"/></div>
+  </section>
+  <div id="content">
+  	<section id="offer2">
+    	<div class="div">
+        <h4 id="judul2">Order Sista</h4>
+        </div>
+        <div id="nomor">Nomor Order * <input id="nomorC" type="number" align="right" required/></div>
+        <button type="submit" class="load">LOAD</button>
+    </section>
+    <section id="offer3">
+    	<table class="formtable">
+        	<thead>
+            	<tr>
+                	<th width="5%"><input type="checkbox" id="checkAll"/></th>
+                    <th width="20%">Nama Item</th>
+                    <th width="15%">SKU</th>
+                    <th width="10%">Harga Satuan</th>
+                    <th>Alasan Retur</th>
+                    <th>Bukti Foto	</th>
+                </tr>
+            </thead>
+            <tbody>
+            	<tr align="center" height="100px">
+                	<td><input class="checkbox" type="checkbox" name="check[]"/></td>
+                    <td>Kiraniar Plain Casual Cardigan</td>
+                    <td>BMW-ANCD-0006MUS-RX4</td>
+                    <td>85000</td>
+                    <td><select>
+                    	<option value="default" disabled selected>-Silahkan Pilih-</option>
+                    	<option value="bolong">Bolong</option>
+                        <option value="jahitan">Jahitan tidak rapi</option>
+                        <option value="besar">Kebesaran</option>
+                        <option value="kecil">Kekecilan</option>
+                    </select></td>
+                    <td><img src="url" alt="gambar" style="width:130px;height:100px;"></td>
+                </tr>
+                <tr align="center" height="100px">
+                	<td><input class="checkbox" type="checkbox" name="check[]"/></td>
+                    <td>Kiraniar Plain Casual Cardigan</td>
+                    <td>BMW-ANCD-0006MUS-RX4</td>
+                    <td>85000</td>
+                    <td><select>
+                    	<option value="default" disabled selected>-Silahkan Pilih-</option>
+                    	<option value="bolong">Bolong</option>
+                        <option value="jahitan">Jahitan tidak rapi</option>
+                        <option value="besar">Kebesaran</option>
+                        <option value="kecil">Kekecilan</option>
+                    </select></td>
+                    <td><img src="url" alt="gambar" style="width:130px;height:100px;"></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div>
+        	
+            <div id="biaya">Biaya Kirim Balik <input id="biayaC" type="number" align="right" required/></div>
+            
+            <h5 id="keterangan">Keterangan</h5>
+            <h5 id="ketgbr">Bukti Foto Ongkir</h5>
+            <div><textarea id="textarea1"></textarea>
+            <img id="gbr3" src="url" alt="gambar" style="width:340px;height:225px">
+            	
+            </div>
+        </div>
+        <div>
+        	<div style="margin-top:20px;margin-left:30px">Data Sista</div>
+            
+           		 <div id="kolom">
+                 	<div><label id="bank">Nama Bank<br><input type="text" style="height:20px;width:200px"/></label></div>
+                    <div><label id="norek">Nomor Rekening<br><input type="number" style="height:20px;width:200px"/></label></div>
+                 </div>
+                 <div id="kolom2">
+                 	<div><label id="cabang">Cabang/Kota<br><input type="text" style="height:20px;width:200px"/></label></div>
+                    <div><label id="norek2">Nomor Pemilik Rekening<br><input type="number" style="height:20px;width:200px"/></label></div>
+                 </div>
+            
+        </div>
+        <div id="button2">
+        	<button type="submit" class="batal" style="margin-right:10px">BATAL</button>
+        	<button type="submit" class="submit">KIRIM</button>
+        </div>
+    </section>
+   
+  </div>
+  <footer> 
+    <!-- This is the footer with default 3 divs -->
+    <center>Copyright@2016-Arian Nurrifqhi</center>
+  </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#checkAll').on('click',function(){
+        if(this.checked){
+            $('.checkbox').each(function(){
+                this.checked = true;
+            });
+        }else{
+             $('.checkbox').each(function(){
+                this.checked = false;
+            });
+        }
+    });
+    
+    $('.checkbox').on('click',function(){
+        if($('.checkbox:checked').length == $('.checkbox').length){
+            $('#checkAll').prop('checked',true);
+        }else{
+            $('#checkAll').prop('checked',false);
+        }
+    });
+});
+</script>
+</body>
+</html>
