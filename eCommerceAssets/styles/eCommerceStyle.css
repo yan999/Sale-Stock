@@ -186,24 +186,27 @@ header {
 
 
 #namaC{
+	position:relative;
 	width:49%;
-	margin-left:90px;
+	left:89px;
 	height:20px;
 	text-align:left;
 	
 }
 
 #emailC{
+	position:relative;
 	margin-top:20px;
 	width:49%;
-	margin-left:106px;	
+	left:105px;
 	height: 20px;
 }
 
 #hpC{
+	position:relative;
 	margin-top:20px;
 	width:49%;
-	margin-left:56px;
+	left:55px;
 	height:20px;	
 }
 
