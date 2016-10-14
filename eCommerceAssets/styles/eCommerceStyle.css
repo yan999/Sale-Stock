@@ -188,7 +188,7 @@ header {
 #namaC{
 	position:relative;
 	width:49%;
-	left:89px;
+	margin-left:90px;
 	height:20px;
 	text-align:left;
 	
@@ -198,7 +198,7 @@ header {
 	position:relative;
 	margin-top:20px;
 	width:49%;
-	left:105px;
+	margin-left:106px;	
 	height: 20px;
 }
 
@@ -206,7 +206,7 @@ header {
 	position:relative;
 	margin-top:20px;
 	width:49%;
-	left:55px;
+	margin-left:65px;
 	height:20px;	
 }
 
